@@ -1,0 +1,526 @@
+@charset "utf-8";
+
+/** responsive for Laptop **/
+
+@media (min-width: 1024px) and (max-width:1340px) {
+    .container{
+      width: 100%;
+    }
+    .header_content{
+      width: 100%;
+    }
+    .article_1, .article_4, .article_2, .article_3{
+      width: 46%;
+    }
+}
+
+
+
+/** responsive for Tablette **/
+
+@media (min-width: 768px) and (max-width:1023.5px) {
+  
+  /** change cart position to fixed *****/
+  .cart{
+    background-color: #403558;
+    position: fixed;
+    right: -40px;
+    top: 200px;
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    border: 2px solid #FBD285;
+    border-left: 6px solid #FBD285;
+    border-right: none;
+    border-radius: 6px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    z-index: 99;
+  }
+  .cart:hover{
+    right: 0;
+  }
+  .cart a{
+    display: block;
+    line-height: 60px;
+    font-size: 22px;
+    padding-bottom: 0px;
+    color: #FBD285;
+  }
+  .cart a:hover{
+    color:#d50032;
+  }
+  .cart a i{
+    margin: 0;
+  }
+
+  /** nav bar style ***********************/
+  nav{
+    width: 80%;
+  }
+  nav ul li a{
+    min-width: 100px;
+  }
+
+  /** header content style **/
+  .header_content{
+    width: 100%;
+    max-height: 1200px;
+    flex-direction: column;
+  }
+  .header_text{
+    width: 90%;
+    min-height: 200px;
+  }
+  .header_text h1{
+    font-size: 42px;
+    font-weight: 800;
+    font-style: italic;
+    text-shadow: 2px 2px 2px #d50032c5;
+  }
+  .header_text p{
+    margin-top: 20px;
+  }
+  .header_text a{
+    margin-top: 10px;
+  }
+  .header_img{
+    width: 70%;
+  }
+  .header_img img{
+    width: 120%;
+    margin-left: -150px;
+  }
+
+  /** header articles  style **/
+  .article_1, .article_4, .article_2, .article_3{
+    width: 47%;
+    min-width: 340px;
+    max-width: 680px;
+  }
+  .article_1 .article_text, .article_4 .article_text, .article_2 .article_text, .article_3 .article_text{
+    width: 80%;
+    padding: 10px;
+  }
+
+  /* neweset section style ***/
+  .newest{
+    width: 100%;
+    min-width: 376px;
+  }
+  .newest_text{
+    width: 90%;
+  }
+  .newest_text p{
+    width: 100%;
+  }
+
+  /** section 2  ***/
+  .section_2{
+    width: 40%;
+    max-width: 320px;
+  }
+
+  /** gallery -******/
+  .gallery1, .gallery2, .gallery3{
+    max-height: 440px;
+  }
+  /** footer *********/
+  .link, .newsletter{
+    width: 43%;
+    padding: 10px;
+  }
+}
+
+
+
+/** responsive for Phone portrait **/
+@media (min-width: 520px) and (max-width:767.5px) {
+  /** change cart position to fixed *****/
+  .container{
+    padding: 0 15px;
+  }
+  .top-header{
+    height: 80px;
+  }
+  .logo{
+    min-width: 80px;
+  }
+  .logo img{
+    width: 60px;
+  }
+  .logo h3{
+  font-size: 14px;
+  }
+  .cart{
+    width: 35%;
+    min-width: 130px;
+    max-width: 180px;
+    text-align: left;
+  }
+  .cart a{
+    line-height: 80px;
+    font-size: 20px;
+  }
+  .cart a:hover{
+    color:#d50032;
+  }
+
+  /** dropdown menu style ***********************/
+  .dropdown{
+    height: 80px;
+  }
+  .dropdownbtn{
+    margin-top: 20px;
+  }
+  .dropdown-menu{
+    width: 100%;
+  }
+
+  /** header content style **/
+  .header_content{
+    width: 100%;
+    max-height: 1200px;
+    flex-direction: column;
+  }
+  .header_text{
+    width: 90%;
+    min-height: 200px;
+  }
+  .header_text h1{
+    font-size: 40px;
+    font-weight: 800;
+    font-style: italic;
+    text-shadow: 2px 2px 2px #d50032c5;
+  }
+  .header_text p{
+    margin-top: 20px;
+  }
+  .header_text a{
+    margin-top: 10px;
+  }
+  .header_img{
+    width: 70%;
+  }
+  .header_img img{
+    width: 120%;
+    margin-left: -150px;
+  }
+
+  /** header articles  style **/
+  .article_1, .article_4, .article_2, .article_3{
+    width: 80%;
+    min-width: 440px;
+    max-width: 680px;
+  }
+  .article_1 .article_image, .article_4 .article_image, .article_2 .article_image, .article_3 .article_image{
+    width: 48%;
+  }
+  .article_1 .article_text, .article_4 .article_text, .article_2 .article_text, .article_3 .article_text{
+    width: 70%;
+    padding: 10px;
+  }
+
+  /* neweset section style ***/
+  .newest{
+    width: 100%;
+    min-width: 376px;
+  }
+  .newest_text{
+    width: 90%;
+  }
+  .newest_text h1{
+    font-size: 28px;
+  }
+  .newest_text p{
+    width: 100%;
+    font-size: 14px;
+  }
+  article{
+    width: 40%;
+    min-width: 250px;
+    min-height: 400px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .col_title{
+    font-size: 18px;
+    line-height: 70px;
+    font-style: italic;
+  }
+
+  /** section 2  ***/
+  .section_2{
+    width: 40%;
+    min-width: 230px;
+    max-width: 320px;
+  }
+  .section_2_text{
+    min-width: 230px;
+  }
+
+  /* TEAM COACH **********/
+  .coach1, .coach3{
+    width: 27%;
+    min-width: 140px;
+  }
+  .coach2{
+    width: 35%;
+    min-width: 200px;
+  }
+
+  /** gallery style  *******/
+  .gallery1{
+    width: 60%;
+    min-width: 100px;
+    max-height: 480px;
+  }
+  .gallery2{
+    width: 30%;
+    min-width: 100px;
+    max-height: 480px;
+  }
+  .gallery3{
+    width: 90%;
+    min-width: 100px;
+  }
+
+  /** footer *********/
+  .link, .newsletter{
+    width: 48%;
+    min-width: 300px;
+    padding: 10px;
+  }
+}
+
+
+
+/** responsive for Phone **/
+@media (min-width:320px) and (max-width: 519px) {
+  /** change cart position to fixed *****/
+  .container{
+    padding: 0 10px;
+    min-width: 300px;
+  }
+  header{
+    width: 100%;
+    min-width: 320px;
+    overflow: hidden;   
+  }
+  .top-header{
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+  .logo{
+    min-width: 80px;
+  }
+  .logo img{
+    width: 60px;
+  }
+  .logo h3{
+  font-size: 14px;
+  }
+  .cart{
+    width: 35%;
+    min-width: 130px;
+    max-width: 180px;
+    text-align: left;
+  }
+  .cart a{
+    line-height: 80px;
+    font-size: 20px;
+  }
+  .cart a:hover{
+    color:#d50032;
+  }
+
+  /** dropdown menu style ***********************/
+  .dropdown{
+    height: 80px;
+  }
+  .dropdownbtn{
+    margin-top: 20px;
+  }
+  .dropdown-menu{
+    width: 100%;
+  }
+  /** header content style **/
+  .flex_box1{
+    width: 100%;
+    min-width: 320px;
+    margin-top: 80px;
+    flex-direction: column;
+  }
+  .header_content{
+    width: 100%;
+    min-width: 320px;
+    max-height: 1200px;
+    margin: 0;
+    padding: 50px 15px;
+    flex-direction: column;
+  }
+  .header_text{
+    width: 100%;
+    min-width: 260px;
+    min-height: 200px;
+    margin-bottom: 40px;
+  }
+  .header_text h1{
+    font-size: 40px;
+    font-weight: 800;
+    font-style: italic;
+    text-shadow: 2px 2px 2px #d50032c5;
+  }
+  .header_text p{
+    margin-top: 20px;
+  }
+  .header_text a{
+    margin-top: 10px;
+  }
+  .header_img{
+    width: 100%;
+    min-width: 300px;
+    min-height: 300px;
+  }
+  .header_img img{
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  /** header articles  style **/
+  .header_article{
+    min-width: 320px;
+    padding: 0;
+  }
+  .article_1, .article_4, .article_2, .article_3{
+    width: 95%;
+    min-width: 290px;
+    max-width: 400px;
+  }
+  .article_1 .article_image, .article_4 .article_image, .article_2 .article_image, .article_3 .article_image{
+    width: 68%;
+  }
+  .article_1 .article_text, .article_4 .article_text, .article_2 .article_text, .article_3 .article_text{
+    width: 100%;
+    padding: 10px;
+  }
+  .article_title{
+    font-size: 18px;
+  }
+  .article_parag{
+    width: 60%;
+    font-size: 14px;
+  }
+  .article_2 .article_parag, .article_3 .article_parag{
+    margin-left: 40%;
+  }
+
+  /* neweset section style ***/
+  .newest{
+    width: 100%;
+    min-width: 320px;
+  }
+  .newest_text{
+    width: 90%;
+    min-width: 320px;
+  }
+  .newest_text h1{
+    font-size: 24px;
+    line-height: 35px;
+    margin-top: 0;
+  }
+  .newest_text p{
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .newest_article{
+    width: 1340px;
+    min-width: 320px;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
+  article{
+    width: 90%;
+    min-width: 300px;
+    min-height: 400px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .col_title{
+    font-size: 18px;
+    line-height: 70px;
+    font-style: italic;
+  }
+
+  /** section 2  ***/
+  .section_2{
+    width: 90%;
+    min-width: 300px;
+    max-width: 320px;
+  }
+  .section_2_text{
+    min-width: 230px;
+  }
+
+  /* TEAM COACH **********/
+  .coachs-img{
+    flex-direction: column;
+    align-items: center;
+  }
+  .coach1, .coach3{
+    width: 90%;
+    min-width: 140px;
+  }
+  .round-img{
+    max-height: 290px;
+    border-radius: 0;
+  }
+  .coach2{
+    width: 90%;
+    min-width: 200px;
+  }
+
+  /** gallery style  *******/
+  .gallery1{
+    width: 60%;
+    min-width: 100px;
+    max-height: 330px;
+  }
+  .gallery2{
+    width: 30%;
+    min-width: 100px;
+    max-height: 480px;
+  }
+  .gallery3{
+    width: 90%;
+    min-width: 100px;
+    max-height: 1000px;
+  }
+  .gallery3 img{
+    width: 100%;
+    min-width: 200px;
+    border: 4px solid white;
+  }
+
+  /** footer *********/
+  .link, .newsletter{
+    width: 48%;
+    min-width: 300px;
+    padding: 10px;
+    text-align: center;
+  }
+  footer ul{
+    padding: 0 0 30px;
+  }
+}
+
+
+@media screen and (max-width: 767.5px) {
+  .dropdown {display: inline-block;}
+  nav {display:none;}
+}
